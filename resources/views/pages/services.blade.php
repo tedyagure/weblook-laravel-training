@@ -3,9 +3,9 @@
 @section('content')
 <p>{{$title}}</p>
 @if ( count ( $services ) > 0 )
-<ul>
+<ul class="list-group">
     @foreach ( $services as $service )
-        <li>{{ $service }}</li>
+        <li class="list-group-items">{{ $service }}</li>
     @endforeach
 </ul>
 @endif
